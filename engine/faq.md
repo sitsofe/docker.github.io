@@ -209,7 +209,11 @@ mainly a 'cosmetic' change, we *discourage* changing it.
 
 If you *really* need to change its setting, make sure to change it back to its
 [default value](https://www.debian.org/releases/stable/i386/ch05s03.html.en){: target="_blank" class="_"}
-afterwards.
+afterwards. For example:
+
+    ARG DEBIAN_FRONTEND=noninteractive
+
+will cause this value to only be set this value during build time.
 
 ### Why do I get `Connection reset by peer` when making a request to a service running in a container?
 
